@@ -10,6 +10,8 @@ const markup = `<h1>${d.getDate()+' '+month+' , '+d.getFullYear()}</h1>
 date_time.innerHTML = markup;
 
 let current = document.getElementById(month);
+current.querySelector('h2').textContent = "This Month";
 let markup2 = `${current.innerHTML}`;
 let current_month = document.getElementById('current');
 current_month.innerHTML = markup2;
+current.querySelector('h2').textContent = month;
